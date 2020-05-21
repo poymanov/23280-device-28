@@ -27,6 +27,26 @@
     <ul class="menu">
       <li>
         <a href="#">Каталог</a>
+        <ul>
+          <li>
+            <a href="#">Виртуальная реальность</a>
+          </li>
+          <li>
+            <a href="#">Моноподы для селфи</a>
+          </li>
+          <li>
+            <a href="#">Экшн-камеры</a>
+          </li>
+          <li>
+            <a href="#">Фитнес-браслеты</a>
+          </li>
+          <li>
+            <a href="#">Умные часы</a>
+          </li>
+          <li>
+            <a href="#">Квадрокоптер</a>
+          </li>
+        </ul>
       </li>
       <li>
         <a href="#">Доставка</a>
@@ -57,6 +77,43 @@
       </li>
     </ul>
   </section>
+  <section>
+    <h3>Фильтр товаров</h3>
+    <form action="https://echo.htmlacademy.ru" method="get">
+      <fieldset>
+        <legend>Цвет</legend>
+        <ul>
+          <li>
+            <label><input type="checkbox" name="colors[]" value="black" checked>Черный</label>
+          </li>
+          <li>
+            <label><input type="checkbox" name="colors[]" value="white">Белый</label>
+          </li>
+          <li>
+            <label><input type="checkbox" name="colors[]" value="blue" checked>Синий</label>
+          </li>
+          <li>
+            <label><input type="checkbox" name="colors[]" value="red" checked>Красный</label>
+          </li>
+          <li>
+            <label><input type="checkbox" name="colors[]" value="pink">Розовый</label>
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset>
+        <legend>Bluetooth</legend>
+        <ul>
+          <li>
+            <label><input type="radio" name="bluetooth" value="1" checked>Есть</label>
+          </li>
+          <li>
+            <label><input type="radio" name="bluetooth" value="0">Нет</label>
+          </li>
+        </ul>
+      </fieldset>
+      <button type="submit">Показать</button>
+    </form>
+  </section>
   <section class="products">
     <h3>Товары категории</h3>
     <div>
@@ -84,21 +141,37 @@
     <ul>
       <li>
         <img src="img/selfie-stick-01.jpg" width="360" height="380" alt="Любительская селфи-палка">
+        <div>
+          <button type="button">В корзину</button>
+          <button type="button">Добавить к сравнению</button>
+        </div>
         <a href="#">Любительская селфи-палка</a>
         <p>500 рублей</p>
       </li>
       <li>
         <img src="img/selfie-stick-02.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
+        <div>
+          <button type="button">В корзину</button>
+          <button type="button">Добавить к сравнению</button>
+        </div>
         <a href="#">Профессиональная селфи-палка </a>
         <p>1 500 рублей</p>
       </li>
       <li>
         <img src="img/selfie-stick-03.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
+        <div>
+          <button type="button">В корзину</button>
+          <button type="button">Добавить к сравнению</button>
+        </div>
         <a href="#">Непотопляемая селфи-палка</a>
         <p>2 500 рублей</p>
       </li>
       <li>
         <img src="img/selfie-stick-04.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
+        <div>
+          <button type="button">В корзину</button>
+          <button type="button">Добавить к сравнению</button>
+        </div>
         <a href="#">Селфи-палка «Следуй за мной»</a>
         <p>4 900 рублей</p>
       </li>

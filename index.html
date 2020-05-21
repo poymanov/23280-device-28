@@ -9,6 +9,11 @@
       <a>
         <img src="img/logo-header.svg" width="163" height="35" alt="Логотип интернет-магазина Девайс">
       </a>
+      <form action="https://echo.htmlacademy.ru" method="get">
+        <label for="search" class="visually-hidden">Поиск по сайту</label>
+        <input id="search" name="query" type="text" placeholder="Поиск по сайту">
+        <button type="submit">Найти</button>
+      </form>
       <ul class="profile">
         <li>
           <a href="#">Войти</a>
@@ -258,5 +263,31 @@
         <a href="https://htmlacademy.ru/intensive/htmlcss">HtmlAcademy</a>
       </div>
     </footer>
+
+    <section>
+      <h2>Форма обратной связи</h2>
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <p>
+          <label for="name">Ваше имя:</label>
+          <input id="name" name="name" type="text" placeholder="Имя Фамилия">
+        </p>
+        <p>
+          <label for="email">Ваш email:</label>
+          <input id="email" name="email" type="email" placeholder="email@example.com">
+        </p>
+        <p>
+          <label for="text">Текст письма:</label>
+          <textarea name="text" id="text" cols="30" rows="10" placeholder="В свободной форме"></textarea>
+        </p>
+        <button type="submit">Отправить</button>
+      </form>
+      <button type="button">Закрыть форму</button>
+    </section>
+
+    <section>
+      <h2>Местоположение интернет-магазина "Девайс"</h2>
+      <img src="img/map-big.png" width="994" height="593" alt="Местоположение интернет-магазина 'Девайс'">
+      <button type="button">Закрыть карту</button>
+    </section>
   </body>
 </html>
