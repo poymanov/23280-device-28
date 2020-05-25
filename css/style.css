@@ -1,0 +1,411 @@
+@font-face {
+  font-family: Gilroy;
+  font-weight: 300;
+  src: url("../fonts/gilroylight.woff2") format('woff2'),
+    url("../fonts/gilroylight.woff") format('woff');
+}
+
+@font-face {
+  font-family: Gilroy;
+  font-weight: 800;
+  src: url("../fonts/gilroyextrabold.woff2") format('woff2'),
+  url("../fonts/gilroyextrabold.woff") format('woff');
+}
+
+:root {
+  --font-open-sans: "Open Sans", Arial, sans-serif;
+  --font-gilroy: Gilroy, Arial, sans-serif;
+
+  --color-black: #000;
+  --color-dark-yellow: #F0C52E;
+  --color-yellow: #F7E296;
+  --color-white: #FFF;
+
+  --header-background-color: var(--color-yellow);
+  --footer-background-color: #363636;
+  --filters-sidebar-background-color: #E5E5E5;
+}
+
+body {
+  font-family: var(--font-open-sans);
+  font-weight: 300;
+  color: var(--color-black);
+  min-width: 1060px;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-black);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+.button {
+  border: 0;
+  text-align: center;
+  position: relative;
+  font-family: var(--font-gilroy);
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  background-color: transparent;
+}
+
+.button::before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 8px;
+  top: 14px;
+  left: 0;
+  background-color: var(--color-dark-yellow);
+  z-index: -1;
+}
+
+.main-header {
+  background-color: var(--header-background-color);
+}
+
+.logo-header:hover,
+.logo-header:focus {
+  opacity: 0.6;
+}
+
+.logo-header:active {
+  opacity: 0.3;
+}
+
+.find-form-input {
+  border: 0;
+  background-color: transparent;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.find-form-input::placeholder {
+  font-size: 15px;
+  line-height: 20px;
+  opacity: 0.3;
+}
+
+.find-form-input:hover::placeholder,
+.find-form-input:focus::placeholder {
+  opacity: 0.6;
+}
+
+.find-form-input:focus {
+  border-bottom: 2px solid var(--color-black);
+}
+
+.find-form-button {
+  font-size: 15px;
+  line-height: 20px;
+  text-transform: uppercase;
+  background: transparent;
+  text-align: center;
+  cursor: pointer;
+  border: 2px solid var(--color-black);
+}
+
+.find-form-button:hover,
+.find-form-button:focus {
+  background-color: var(--color-black);
+  color: var(--color-white);
+}
+
+.find-form-button:active {
+  color: var(--color-black);
+}
+
+.profile {
+  list-style: none;
+}
+
+.profile-link {
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.profile-link-logout {
+  opacity: 0.3;
+}
+
+.profile-link:hover,
+.profile-link:focus {
+  opacity: 0.6;
+}
+
+.profile-link:active {
+  opacity: 0.3;
+}
+
+.menu {
+  list-style: none;
+}
+
+.menu-link {
+  font-family: var(--font-gilroy);
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.menu-link:hover,
+.menu-link:focus {
+  opacity: 0.6;
+}
+
+.menu-link:active {
+  opacity: 0.3;
+}
+
+.submenu {
+  list-style: none;
+}
+
+.submenu-link {
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.submenu-link:hover,
+.submenu-link:focus {
+  opacity: 0.6;
+}
+
+.submenu-link:active {
+  opacity: 0.3;
+}
+
+.info-title {
+  font-family: var(--font-gilroy);
+  font-weight: 800;
+  font-size: 47px;
+  line-height: 58px;
+  letter-spacing: 0.2em;
+}
+
+.info-text {
+  font-size: 15px;
+  line-height: 28px;
+}
+
+.about li {
+  font-family: var(--font-gilroy);
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 28px;
+}
+
+.button:hover:before,
+.button:focus:before {
+  top: 0;
+  height: 100%;
+}
+
+.catalog-header {
+  font-family: var(--font-gilroy);
+  font-weight: 800;
+  font-size: 47px;
+  line-height: 58px;
+}
+
+.breadcrumbs ul {
+  list-style: none;
+}
+
+.breadcrumbs-link {
+  font-size: 14px;
+  line-height: 19px;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.breadcrumbs-link:hover,
+.breadcrumbs-link:focus {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.breadcrumbs-link:active {
+  color: rgba(0, 0, 0, 0.1);
+}
+
+.filters {
+  background-color: var(--filters-sidebar-background-color);
+}
+
+.filters fieldset {
+  border: 0;
+}
+
+.filters ul {
+  list-style: none;
+}
+
+.filters legend {
+  font-family: var(--font-gilroy);
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.1em;
+}
+
+.filters-checkbox + label {
+  font-size: 14px;
+  line-height: 19px;
+  position: relative;
+}
+
+.filters-radio + label {
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.filters-submit-button {
+  z-index: 1;
+}
+
+.products ul {
+  list-style: none;
+}
+
+.product-title {
+  font-family: var(--font-gilroy);
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.05em;
+}
+
+.product-price {
+  font-family: var(--font-gilroy);
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 18px;
+  letter-spacing: 0.05em;
+}
+
+.product-compare {
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: 0.1em;
+  text-decoration: none;
+  opacity: 0.5;
+  text-align: center;
+  border: 0;
+  background-color: transparent;
+}
+
+.product-compare:hover,
+.product-compare:focus {
+  opacity: 1;
+}
+
+.product-compare:active {
+  opacity: 0.2;
+}
+
+.main-footer {
+  background-color: var(--footer-background-color);
+}
+
+.logo-footer:hover,
+.logo-footer:focus {
+  opacity: 0.6;
+}
+
+.logo-footer:active {
+  opacity: 0.3;
+}
+
+.profile-footer {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.profile-footer a {
+  font-size: 15px;
+  line-height: 20px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.profile-footer a:hover,
+.profile-footer a:focus {
+  color: var(--color-white);
+}
+
+.profile-footer a:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+address {
+  font-size: 15px;
+  line-height: 20px;
+  color: var(--color-white);
+}
+
+.menu-footer {
+  list-style: none;
+}
+
+.menu-footer a {
+  font-family: var(--font-gilroy);
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--color-white);
+}
+
+.menu-footer a:hover,
+.menu-footer a:focus {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.menu-footer a:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.footer-tel {
+  font-size: 15px;
+  line-height: 20px;
+  color: var(--color-white);
+}
+
+.footer-tel a {
+  color: var(--color-white);
+}
+
+.socials {
+  list-style: none;
+}
+
+.socials a {
+  color: var(--color-white);
+}
+
+.developer {
+  color: var(--color-white);
+}
+
+.feedback,
+.map {
+  display: none;
+}
