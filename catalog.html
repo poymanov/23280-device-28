@@ -87,7 +87,7 @@
   </section>
   <section class="filters">
     <h2 class="visually-hidden">Фильтр товаров</h2>
-    <h3>Фильтр:</h3>
+    <h3 class="catalog-title">Фильтр:</h3>
     <form action="https://echo.htmlacademy.ru" method="get">
       <fieldset>
         <legend>Стоимость</legend>
@@ -135,11 +135,11 @@
   </section>
   <section class="products">
     <h3 class="visually-hidden">Товары категории</h3>
-    <div>
-      <p>Сортировка:</p>
-      <ul>
+    <div class="sorts">
+      <p class="catalog-title">Сортировка:</p>
+      <ul class="sort-types">
         <li>
-          <a href="#">По цене</a>
+          <a href="#" class="sort-type-current">По цене</a>
         </li>
         <li>
           <a href="#">По типу</a>
@@ -148,12 +148,12 @@
           <a href="#">По популярности</a>
         </li>
       </ul>
-      <ul>
+      <ul class="sort-directions">
         <li>
           <a href="#">По возрастанию</a>
         </li>
         <li>
-          <a href="#">По убыванию</a>
+          <a href="#" class="sort-direction-current">По убыванию</a>
         </li>
       </ul>
     </div>
@@ -195,22 +195,22 @@
         <p class="product-price">4 900 руб.</p>
       </li>
     </ul>
-    <div>
+    <div class="pagination">
       <ul>
-        <li>
-          <a href="#">Назад</a>
+        <li class="pagination-item-prev">
+          <a href="#" class="pagination-link">Назад</a>
         </li>
         <li>
-          <a href="#">1</a>
+          <a href="#" class="pagination-link pagination-link-active">1</a>
         </li>
         <li>
-          <a href="#">2</a>
+          <a href="#" class="pagination-link">2</a>
         </li>
         <li>
-          <a href="#">3</a>
+          <a href="#" class="pagination-link">3</a>
         </li>
-        <li>
-          <a href="#">Вперед</a>
+        <li class="pagination-item-next">
+          <a href="#" class="pagination-link">Вперед</a>
         </li>
       </ul>
     </div>
