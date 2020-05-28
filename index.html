@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
@@ -7,43 +7,47 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
-  <body>
+  <body class="page-body">
     <header class="main-header">
-      <a class="logo-header">
-        <img src="img/logo-header.svg" width="163" height="35" alt="Логотип интернет-магазина Девайс">
-      </a>
-      <form action="https://echo.htmlacademy.ru" method="get">
-        <label for="search" class="visually-hidden">Поиск по сайту</label>
-        <input id="search" name="query" type="text" placeholder="Поиск по сайту" class="find-form-input">
-        <button type="submit" class="find-form-button">Найти</button>
-      </form>
-      <ul class="profile">
-        <li>
-          <a href="#" class="profile-link">Войти</a>
-        </li>
-        <li>
-          <a href="#" class="profile-link">Сравнить</a>
-        </li>
-        <li>
-          <a href="#" class="profile-link">Корзина</a>
-        </li>
-      </ul>
-      <nav>
-        <ul class="menu">
-          <li>
-            <a href="catalog.html" class="menu-link">Каталог товаров</a>
-          </li>
-          <li>
-            <a href="#" class="menu-link">Доставка</a>
-          </li>
-          <li>
-            <a href="#" class="menu-link">Гарантия</a>
-          </li>
-          <li>
-            <a href="#" class="menu-link">Контакты</a>
-          </li>
-        </ul>
-      </nav>
+      <div class="container">
+        <a class="logo-header">
+          <img src="img/logo-header.svg" width="163" height="35" alt="Логотип интернет-магазина Девайс">
+        </a>
+        <div class="main-header-wrapper">
+          <form class="find-form" action="https://echo.htmlacademy.ru" method="get">
+            <label for="search" class="visually-hidden">Поиск по сайту</label>
+            <input id="search" name="query" type="text" placeholder="Поиск по сайту" class="find-form-input">
+            <button type="submit" class="find-form-button">Найти</button>
+          </form>
+          <ul class="profile">
+            <li class="profile-login">
+              <a href="#" class="profile-link">Войти</a>
+            </li>
+            <li class="profile-compare">
+              <a href="#" class="profile-link">Сравнить</a>
+            </li>
+            <li>
+              <a href="#" class="profile-link">Корзина</a>
+            </li>
+          </ul>
+        </div>
+        <nav>
+          <ul class="menu">
+            <li>
+              <a href="catalog.html" class="menu-link">Каталог товаров</a>
+            </li>
+            <li>
+              <a href="#" class="menu-link">Доставка</a>
+            </li>
+            <li>
+              <a href="#" class="menu-link">Гарантия</a>
+            </li>
+            <li>
+              <a href="#" class="menu-link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main>
       <h1 class="visually-hidden">Интернет-магазин гаджетов "Девайс"</h1>
@@ -211,71 +215,77 @@
           </li>
         </ul>
       </section>
-      <section class="about">
-        <h2 class="info-title">О нас</h2>
-        <p class="info-text">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
-        <p class="info-text">Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
-        <ul>
-          <li>Деловые Линии</li>
-          <li>Автотрейдинг</li>
-          <li>ЖелДорЭкспедиция</li>
-        </ul>
-        <a href="#" class="button">Подробнее о нас</a>
-      </section>
-      <section class="contacts">
-        <h2 class="info-title">Контакты</h2>
-        <p class="info-text">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-        <a href="#"><img src="img/map.jpg" width="560" height="222" alt="Карта с местоположением интернет-магазина Девайс"></a>
-        <a href="#" class="button">Напишите нам</a>
-      </section>
+      <div class="index-columns">
+        <div class="container">
+          <section class="about">
+            <h2 class="info-title">О нас</h2>
+            <p class="info-text">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
+            <p class="info-text">Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
+            <ul>
+              <li>Деловые Линии</li>
+              <li>Автотрейдинг</li>
+              <li>ЖелДорЭкспедиция</li>
+            </ul>
+            <a href="#" class="button">Подробнее о нас</a>
+          </section>
+          <section class="contacts">
+            <h2 class="info-title">Контакты</h2>
+            <p class="info-text">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
+            <a href="#"><img src="img/map.jpg" width="560" height="222" alt="Карта с местоположением интернет-магазина Девайс"></a>
+            <a href="#" class="button">Напишите нам</a>
+          </section>
+        </div>
+      </div>
     </main>
     <footer class="main-footer">
-      <div>
-        <a class="logo-footer">
-          <img src="img/logo-footer.svg" width="163" height="35" alt="Логотип интернет-магазина Девайс">
-        </a>
-        <ul class="profile-footer">
-          <li>
-            <a href="#">Войти</a>
-          </li>
-          <li>
-            <a href="#">Сравнить</a>
-          </li>
-          <li>
-            <a href="#">Корзина</a>
-          </li>
-        </ul>
-      </div>
-      <div>
-        <address>г. Москва, ул. Строителей, 15</address>
-        <ul class="menu-footer">
-          <li>
-            <a href="#">Доставка</a>
-          </li>
-          <li>
-            <a href="#">Гарантия</a>
-          </li>
-          <li>
-            <a href="#">Контакты</a>
-          </li>
-        </ul>
-        <p class="footer-tel">
-          Тел.: <a href="tel:+74954959595">+7 (495) 495-95-95</a>
-        </p>
-      </div>
-      <div>
-        <ul class="socials">
-          <li>
-            <a href="#">Facebook</a>
-          </li>
-          <li>
-            <a href="#">Instagram</a>
-          </li>
-          <li>
-            <a href="#">Twitter</a>
-          </li>
-        </ul>
-        <a href="https://htmlacademy.ru/intensive/htmlcss" class="developer">Разработано для HtmlAcademy</a>
+      <div class="container">
+        <div class="main-footer-wrapper-top">
+          <a class="logo-footer">
+            <img src="img/logo-footer.svg" width="163" height="35" alt="Логотип интернет-магазина Девайс">
+          </a>
+          <ul class="profile-footer">
+            <li>
+              <a href="#">Войти</a>
+            </li>
+            <li>
+              <a href="#">Сравнить</a>
+            </li>
+            <li>
+              <a href="#">Корзина</a>
+            </li>
+          </ul>
+        </div>
+        <div class="main-footer-wrapper-middle">
+          <address>г. Москва, ул. Строителей, 15</address>
+          <ul class="menu-footer">
+            <li>
+              <a href="#">Доставка</a>
+            </li>
+            <li>
+              <a href="#">Гарантия</a>
+            </li>
+            <li>
+              <a href="#">Контакты</a>
+            </li>
+          </ul>
+          <p class="footer-tel">
+            Тел.: <a href="tel:+74954959595">+7 (495) 495-95-95</a>
+          </p>
+        </div>
+        <div class="main-footer-wrapper-bottom">
+          <ul class="socials">
+            <li>
+              <a href="#">Facebook</a>
+            </li>
+            <li>
+              <a href="#">Instagram</a>
+            </li>
+            <li>
+              <a href="#">Twitter</a>
+            </li>
+          </ul>
+          <a href="https://htmlacademy.ru/intensive/htmlcss" class="developer">Разработано для HtmlAcademy</a>
+        </div>
       </div>
     </footer>
 
