@@ -303,7 +303,7 @@ img {
   font-size: 36px;
   line-height: 42px;
   letter-spacing: 0.1em;
-  color: #000;
+  color: var(--color-black);
   padding: 10px;
 }
 
@@ -313,7 +313,7 @@ img {
   font-size: 13px;
   line-height: 15px;
   letter-spacing: 0.1em;
-  color: #000;
+  color: var(--color-black);
   padding: 10px;
 }
 
@@ -378,10 +378,10 @@ img {
   padding: 0;
 }
 
-.services a.active-service {
+.services .active-service {
   display: block;
-  background-color: #000;
-  color: #F7E296;
+  background-color: var(--color-black);
+  color: var(--color-yellow);
 }
 
 .services h3 {
@@ -390,7 +390,7 @@ img {
   font-size: 47px;
   line-height: 58px;
   letter-spacing: 0.2em;
-  color: #000;
+  color: var(--color-black);
   margin: 0;
 }
 
@@ -401,7 +401,7 @@ img {
   font-size: 15px;
   line-height: 28px;
   letter-spacing: 0.1em;
-  color: #000;
+  color: var(--color-black);
 }
 
 .brands {
