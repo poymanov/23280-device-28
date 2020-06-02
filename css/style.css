@@ -637,21 +637,44 @@ img {
   margin-bottom: 30px;
   padding: 0;
   display: flex;
+  padding-left: 61px;
 }
 
 .breadcrumbs li {
   margin-right: 41px;
+  position: relative;
 }
 
 .breadcrumbs li:last-child {
   margin-right: 0;
 }
 
+.breadcrumbs li:after {
+  content: "";
+  display: block;
+  width: 4px;
+  height: 7px;
+  background-image: url("../img/arrow.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: absolute;
+  top: 8px;
+  right: -22px;
+}
+
+.breadcrumbs li:last-child:after {
+  display: none;
+}
+
 .breadcrumbs-link {
   font-size: 14px;
   line-height: 19px;
   color: rgba(0, 0, 0, 0.3);
+  position: relative;
 }
+
+
+
 
 .breadcrumbs-link:hover,
 .breadcrumbs-link:focus {
