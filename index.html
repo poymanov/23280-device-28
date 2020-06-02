@@ -16,25 +16,45 @@
         <div class="main-header-wrapper">
           <form class="find-form" action="https://echo.htmlacademy.ru" method="get">
             <label for="search" class="visually-hidden">Поиск по сайту</label>
-            <input id="search" name="query" type="text" placeholder="Поиск по сайту" class="find-form-input">
+            <input id="search" name="query" type="text" placeholder="Поиск по сайту" class="find-form-input" autocomplete="off">
             <button type="submit" class="find-form-button">Найти</button>
           </form>
           <ul class="profile">
             <li class="profile-login">
-              <a href="#" class="profile-link">Войти</a>
+              <a href="#" class="profile-link profile-link-icon profile-link-login">Войти</a>
             </li>
             <li class="profile-compare">
-              <a href="#" class="profile-link">Сравнить</a>
+              <a href="#" class="profile-link profile-link-icon profile-link-compare">Сравнить</a>
             </li>
             <li>
-              <a href="#" class="profile-link">Корзина</a>
+              <a href="#" class="profile-link profile-link-icon profile-link-cart">Корзина</a>
             </li>
           </ul>
         </div>
         <nav>
           <ul class="menu">
-            <li>
-              <a href="catalog.html" class="menu-link">Каталог товаров</a>
+            <li class="menu-catalog">
+              <a href="catalog.html" class="menu-link menu-link-catalog">Каталог товаров</a>
+              <ul class="submenu">
+                <li>
+                  <ul class="submenu-column">
+                    <li><a href="#" class="submenu-link">Виртуальная реальность</a></li>
+                    <li><a href="#" class="submenu-link">Моноподы для селфи</a></li>
+                    <li><a href="#" class="submenu-link">Экшн-камеры</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <ul class="submenu-column">
+                    <li><a href="#" class="submenu-link">Фитнес-браслеты</a></li>
+                    <li><a href="#" class="submenu-link">Умные часы</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <ul class="submenu-column">
+                    <li><a href="#" class="submenu-link">Квадрокоптер</a></li>
+                  </ul>
+                </li>
+              </ul>
             </li>
             <li>
               <a href="#" class="menu-link">Доставка</a>

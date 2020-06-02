@@ -14,48 +14,48 @@
         <img src="img/logo-header.svg" width="163" height="35" alt="Логотип интернет-магазина Девайс">
       </a>
       <div class="main-header-wrapper">
-        <form action="https://echo.htmlacademy.ru" method="get">
+        <form class="find-form" action="https://echo.htmlacademy.ru" method="get">
           <label for="search" class="visually-hidden">Поиск по сайту</label>
-          <input id="search" name="query" type="text" placeholder="Поиск по сайту" class="find-form-input">
+          <input id="search" name="query" type="text" placeholder="Поиск по сайту" class="find-form-input" autocomplete="off">
           <button type="submit" class="find-form-button">Найти</button>
         </form>
         <ul class="profile">
           <li class="profile-user">
-            <a href="#" class="profile-link">Валентин Петухов</a>
+            <a href="#" class="profile-link profile-link-icon profile-link-user">Валентин Петухов</a>
           </li>
           <li class="profile-logout">
             <a href="#" class="profile-link profile-link-logout">Выйти</a>
           </li>
           <li class="profile-logged-compare">
-            <a href="#" class="profile-link">Сравнить</a>
+            <a href="#" class="profile-link profile-link-icon profile-link-compare">Сравнить</a>
           </li>
           <li>
-            <a href="#" class="profile-link">Корзина</a>
+            <a href="#" class="profile-link profile-link-icon profile-link-cart">Корзина</a>
           </li>
         </ul>
       </div>
       <nav>
         <ul class="menu">
-          <li>
-            <a href="#" class="menu-link">Каталог товаров</a>
+          <li class="menu-catalog">
+            <a href="#" class="menu-link menu-link-catalog">Каталог товаров</a>
             <ul class="submenu">
               <li>
-                <a href="#" class="submenu-link">Виртуальная реальность</a>
+                <ul class="submenu-column">
+                  <li><a href="#" class="submenu-link">Виртуальная реальность</a></li>
+                  <li><a href="#" class="submenu-link">Моноподы для селфи</a></li>
+                  <li><a href="#" class="submenu-link">Экшн-камеры</a></li>
+                </ul>
               </li>
               <li>
-                <a href="#" class="submenu-link">Моноподы для селфи</a>
+                <ul class="submenu-column">
+                  <li><a href="#" class="submenu-link">Фитнес-браслеты</a></li>
+                  <li><a href="#" class="submenu-link">Умные часы</a></li>
+                </ul>
               </li>
               <li>
-                <a href="#" class="submenu-link">Экшн-камеры</a>
-              </li>
-              <li>
-                <a href="#" class="submenu-link">Фитнес-браслеты</a>
-              </li>
-              <li>
-                <a href="#" class="submenu-link">Умные часы</a>
-              </li>
-              <li>
-                <a href="#" class="submenu-link">Квадрокоптер</a>
+                <ul class="submenu-column">
+                  <li><a href="#" class="submenu-link">Квадрокоптер</a></li>
+                </ul>
               </li>
             </ul>
           </li>
