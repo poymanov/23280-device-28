@@ -1373,12 +1373,11 @@ address {
 }
 
 .map {
-  position: absolute;
-  /** Временные стили позицирования для демонстрации модального окна */
-  top: 40%;
+  display: none;
+  position: fixed;
+  top: 50%;
   left: 50%;
-  /** */
-  margin-left: -497px;
+  transform: translate(-50%, -50%);
 }
 
 .button-close-modal {
@@ -1407,12 +1406,11 @@ address {
 }
 
 .feedback {
-  position: absolute;
-  /** Временные стили позицирования для демонстрации модального окна */
-  top: 105%;
+  display: none;
+  position: fixed;
+  top: 50%;
   left: 50%;
-  /** */
-  margin-left: -480px;
+  transform: translate(-50%, -50%);
   width: 760px;
   background-color: var(--color-white);
   padding-right: 100px;
