@@ -91,7 +91,7 @@ img {
   background-color: transparent;
 }
 
-.button::before {
+.button:before {
   content: "";
   display: block;
   position: absolute;
