@@ -44,7 +44,6 @@ body {
 
 a {
   text-decoration: none;
-  color: var(--color-black);
 }
 
 img {
@@ -79,6 +78,7 @@ img {
 }
 
 .button {
+  color: inherit;
   border: 0;
   text-align: center;
   position: relative;
@@ -237,6 +237,7 @@ img {
 }
 
 .profile-link {
+  color: inherit;
   font-size: 15px;
   line-height: 20px;
 }
@@ -299,6 +300,7 @@ img {
 }
 
 .menu-link {
+  color: inherit;
   font-family: var(--font-gilroy);
   font-weight: 800;
   font-size: 18px;
@@ -357,6 +359,7 @@ img {
 }
 
 .submenu-link {
+  color: inherit;
   font-size: 15px;
   line-height: 20px;
 }
@@ -455,6 +458,7 @@ img {
 }
 
 .categories-link {
+  color: inherit;
   font-family: var(--font-gilroy);
   font-weight: 800;
   font-size: 18px;
@@ -928,6 +932,7 @@ img {
 }
 
 .sort-options a {
+  color: inherit;
   font-size: 14px;
   line-height: 19px;
   opacity: 0.3;
@@ -1012,6 +1017,7 @@ img {
 }
 
 .product-title {
+  color: inherit;
   font-family: var(--font-gilroy);
   font-weight: 800;
   font-size: 18px;
@@ -1089,6 +1095,7 @@ img {
 }
 
 .pagination-link {
+  color: inherit;
   font-family: var(--font-gilroy);
   font-weight: 800;
   font-size: 16px;
