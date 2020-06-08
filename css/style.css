@@ -565,7 +565,7 @@ img {
   padding-left: 4px;
 }
 
-.about .info-title {
+.info-title-about {
   margin-top: 50px;
   margin-bottom: 40px;
 }
@@ -574,7 +574,7 @@ img {
   width: 557px;
 }
 
-.contacts .info-title {
+.info-title-contacts {
   margin-top: 53px;
   margin-bottom: 37px;
 }
