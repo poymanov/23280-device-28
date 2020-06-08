@@ -1305,10 +1305,6 @@ img {
   margin-right: 0;
 }
 
-.socials a {
-  color: var(--color-white);
-}
-
 .socials-link {
   font-size: 0;
   text-decoration: none;
@@ -1342,7 +1338,6 @@ img {
 }
 
 .developer {
-  color: var(--color-white);
   display: block;
   font-size: 0;
   width: 27px;
