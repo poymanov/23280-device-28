@@ -1223,7 +1223,7 @@ img {
   margin-bottom: 78px;
 }
 
-address {
+.footer-address {
   font-size: 15px;
   line-height: 20px;
   color: var(--color-white);
