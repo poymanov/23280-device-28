@@ -1,15 +1,15 @@
 @font-face {
   font-family: Gilroy;
   font-weight: 300;
-  src: url("../fonts/gilroylight.woff2") format('woff2'),
-    url("../fonts/gilroylight.woff") format('woff');
+  src: url("../fonts/gilroylight.woff2") format("woff2"),
+    url("../fonts/gilroylight.woff") format("woff");
 }
 
 @font-face {
   font-family: Gilroy;
   font-weight: 800;
-  src: url("../fonts/gilroyextrabold.woff2") format('woff2'),
-  url("../fonts/gilroyextrabold.woff") format('woff');
+  src: url("../fonts/gilroyextrabold.woff2") format("woff2"),
+  url("../fonts/gilroyextrabold.woff") format("woff");
 }
 
 :root {
@@ -92,7 +92,7 @@ img {
 }
 
 .button::before {
-  content: '';
+  content: "";
   display: block;
   position: absolute;
   width: 100%;
@@ -151,7 +151,7 @@ img {
   background-color: transparent;
   font-size: 15px;
   line-height: 20px;
-  background-image: url('../img/search.svg');
+  background-image: url("../img/search.svg");
   background-repeat: no-repeat;
   background-position: left 18px;
   padding-top: 14px;
@@ -263,16 +263,16 @@ img {
 
 .profile-link-user,
 .profile-link-login {
-  background-image: url('../img/profile-header.svg');
+  background-image: url("../img/profile-header.svg");
   background-position-x: 2px;
 }
 
 .profile-link-compare {
-  background-image: url('../img/compare-header.svg');
+  background-image: url("../img/compare-header.svg");
 }
 
 .profile-link-cart {
-  background-image: url('../img/cart-header.svg');
+  background-image: url("../img/cart-header.svg");
   background-position: 1px 5px;
 }
 
@@ -310,7 +310,7 @@ img {
 }
 
 .menu-link-catalog {
-  background-image: url('../img/more.svg');
+  background-image: url("../img/more.svg");
   background-repeat: no-repeat;
   background-position: right center;
   padding-right: 34px;
@@ -1200,22 +1200,22 @@ img {
 }
 
 .profile-footer-login {
-  background-image: url('../img/profile-footer.svg');
+  background-image: url("../img/profile-footer.svg");
   background-position-y: 6px;
 }
 
 .profile-footer-user {
-  background-image: url('../img/profile-footer.svg');
+  background-image: url("../img/profile-footer.svg");
   background-position-y: 6px;
 }
 
 .profile-footer-compare {
-  background-image: url('../img/compare-footer.svg');
+  background-image: url("../img/compare-footer.svg");
   background-position-y: 7px;
 }
 
 .profile-footer-cart {
-  background-image: url('../img/cart-footer.svg');
+  background-image: url("../img/cart-footer.svg");
   background-position-y: 5px;
 }
 
