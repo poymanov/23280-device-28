@@ -1374,7 +1374,7 @@ img {
   opacity: 0.5;
   border: 0;
   border-radius: 50%;
-  background-color: var(--color-yellow);;
+  background-color: var(--color-yellow);
   background-image: url("../img/close.svg");
   background-repeat: no-repeat;
   background-position: center center;
