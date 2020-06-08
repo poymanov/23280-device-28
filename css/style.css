@@ -159,6 +159,7 @@ img {
   padding-right: 15px;
   padding-bottom: 14px;
   border-bottom: 2px solid transparent;
+  outline: 0;
 }
 
 .find-form-input::placeholder {
