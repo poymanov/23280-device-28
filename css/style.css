@@ -27,10 +27,12 @@
   --color-light-grey: #EBEBEB;
   --color-medium-light-grey: #EAEAEA;
   --color-extra-light-grey: #E5E5E5;
+  --color-pink: #F6DADA;
 
   --header-background-color: var(--color-yellow);
   --footer-background-color: var(--color-extra-gark-grey);
   --filters-sidebar-background-color: var(--color-extra-light-grey);
+  --feedback-input-color: #F2F2F2;
 }
 
 body {
@@ -38,7 +40,6 @@ body {
   font-weight: 300;
   color: var(--color-black);
   min-width: 1060px;
-  overflow-x: hidden;
 }
 
 a {
@@ -635,10 +636,13 @@ img {
   margin-bottom: 31px;
 }
 
+.breadcrumbs {
+  margin-bottom: 50px;
+}
+
 .breadcrumbs ul {
   list-style: none;
   margin: 0;
-  margin-bottom: 50px;
   padding: 0;
   display: flex;
   padding-left: 61px;
@@ -686,55 +690,13 @@ img {
   color: rgba(0, 0, 0, 0.1);
 }
 
-.catalog-columns .container {
-  display: flex;
-}
-
-.catalog-title {
-  font-family: var(--font-gilroy);
-  font-weight: 800;
-  font-size: 16px;
-  line-height: 20px;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  margin: 0;
-}
-
 .filters {
   position: relative;
-  width: 328px;
+  width: 204px;
   background-color: var(--filters-sidebar-background-color);
-}
-
-.filters .catalog-title {
-  position: relative;
-  margin: 0;
-  padding-top: 25px;
-  padding-right: 68px;
-  padding-bottom: 25px;
   padding-left: 60px;
-  background-color: var(--color-dark-grey);
-}
-
-.filters .catalog-title:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 328px;
-  width: 100vw;
-  height: 70px;
-  background-color: var(--color-dark-grey);
-}
-
-.filters::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: -1;
-  width: 100vw;
-  height: 100%;
-  background-color: var(--color-extra-light-grey);
+  padding-right: 64px;
+  padding-top: 71px;
 }
 
 .filters fieldset {
@@ -748,19 +710,13 @@ img {
   padding: 0;
 }
 
-.filters form {
-  padding-top: 70px;
-  padding-left: 59px;
-  padding-right: 64px;
-}
-
 .filters legend {
   font-family: var(--font-gilroy);
   font-weight: 800;
   font-size: 14px;
   line-height: 17px;
   letter-spacing: 0.1em;
-  border-top: 2px solid #000;
+  border-top: 2px solid var(--color-black);
   width: 100%;
   padding-top: 14px;
 }
@@ -915,26 +871,45 @@ img {
   top: 8px;
 }
 
+.catalog-top {
+  background: linear-gradient(to right, var(--color-dark-grey) 34%, var(--color-extra-light-grey) 34%);
+}
+
+.catalog-top-container {
+  display: flex;
+}
+
+.catalog-top-title {
+  font-family: var(--font-gilroy);
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+}
+
+.catalog-top-filters-title {
+  width: 268px;
+  background-color: var(--color-dark-grey);
+  padding-left: 60px;
+  padding-top: 25px;
+  padding-bottom: 24px;
+}
+
 .sorts {
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: relative;
-  padding-left: 72px;
-  padding-top: 21px;
-  padding-bottom: 29px;
+  background-color: var(--color-extra-light-grey);
   width: 760px;
+  padding-left: 72px;
 }
 
-.sorts:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  width: 100vw;
-  height: 100%;
-  background-color: var(--color-extra-light-grey);
+.sorts ul {
+  list-style: none;
 }
 
 .sort-options {
@@ -971,8 +946,18 @@ img {
   opacity: 1;
 }
 
+.catalog-content {
+  background: linear-gradient(to right, var(--color-extra-light-grey) 34%, var(--color-white) 34%);
+}
+
+.catalog-content-container {
+  display: flex;
+}
+
 .products {
-  width: 760px;
+  width: 759px;
+  padding-left: 73px;
+  padding-top: 70px;
 }
 
 .products ul {
@@ -986,8 +971,6 @@ img {
   padding: 0;
   margin: 0;
   margin-bottom: 30px;
-  margin-left: 73px;
-  margin-top: 70px;
 }
 
 .products-list li {
@@ -1439,7 +1422,7 @@ address {
 
 .feedback-field {
   width: 320px;
-  background-color: #F2F2F2;
+  background-color: var(--feedback-input-color);
   border: 0;
   padding: 18px 20px 17px;
   font-family: Gilroy, Arial, sans-serif;
@@ -1455,7 +1438,7 @@ address {
 }
 
 .feedback-field-error {
-  background-color: #F6DADA;
+  background-color: var(--color-pink);
 }
 
 .feedback-field::placeholder {

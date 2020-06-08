@@ -93,11 +93,38 @@
         </ul>
       </div>
     </section>
-    <div class="catalog-columns">
-      <div class="container">
+
+    <div class="catalog-top">
+      <div class="container catalog-top-container">
+        <h3 class="catalog-top-title catalog-top-filters-title">Фильтр:</h3>
+        <div class="sorts">
+          <p class="catalog-top-title">Сортировка:</p>
+          <ul class="sort-options">
+            <li>
+              <a href="#" class="sort-options-current">По цене</a>
+            </li>
+            <li>
+              <a href="#">По типу</a>
+            </li>
+            <li>
+              <a href="#">По популярности</a>
+            </li>
+          </ul>
+          <ul class="sort-options">
+            <li>
+              <a href="#">По возрастанию</a>
+            </li>
+            <li>
+              <a href="#" class="sort-options-current">По убыванию</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="catalog-content">
+      <div class="container catalog-content-container">
         <section class="filters">
-          <h2 class="visually-hidden">Фильтр товаров</h2>
-          <h3 class="catalog-title">Фильтр:</h3>
           <form action="https://echo.htmlacademy.ru" method="get">
             <fieldset class="fieldset-price">
               <legend>Стоимость</legend>
@@ -145,28 +172,6 @@
         </section>
         <section class="products">
           <h3 class="visually-hidden">Товары категории</h3>
-          <div class="sorts">
-            <p class="catalog-title">Сортировка:</p>
-            <ul class="sort-options">
-              <li>
-                <a href="#" class="sort-options-current">По цене</a>
-              </li>
-              <li>
-                <a href="#">По типу</a>
-              </li>
-              <li>
-                <a href="#">По популярности</a>
-              </li>
-            </ul>
-            <ul class="sort-options">
-              <li>
-                <a href="#">По возрастанию</a>
-              </li>
-              <li>
-                <a href="#" class="sort-options-current">По убыванию</a>
-              </li>
-            </ul>
-          </div>
           <ul class="products-list">
             <li>
               <div class="product-image-wrapper">
