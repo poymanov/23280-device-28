@@ -98,24 +98,24 @@
       <div class="container catalog-top-container">
         <h3 class="catalog-top-title catalog-top-filters-title">Фильтр:</h3>
         <div class="sorts">
-          <p class="catalog-top-title">Сортировка:</p>
-          <ul class="sort-options">
+          <p class="catalog-top-title catalog-top-sort-title">Сортировка:</p>
+          <ul class="sort-options sort-type">
             <li>
-              <a href="#" class="sort-options-current">По цене</a>
+              <a href="#" class="sort-options-current sort-options-link">По цене</a>
             </li>
             <li>
-              <a href="#">По типу</a>
+              <a href="#" class="sort-options-link">По типу</a>
             </li>
             <li>
-              <a href="#">По популярности</a>
+              <a href="#" class="sort-options-link">По популярности</a>
             </li>
           </ul>
-          <ul class="sort-options">
+          <ul class="sort-options sort-direction">
             <li>
-              <a href="#">По возрастанию</a>
+              <a href="#" class="sort-options-link sort-direction-asc">По возрастанию</a>
             </li>
             <li>
-              <a href="#" class="sort-options-current">По убыванию</a>
+              <a href="#" class="sort-options-link sort-options-current sort-direction-desc">По убыванию</a>
             </li>
           </ul>
         </div>
@@ -128,13 +128,24 @@
           <form action="https://echo.htmlacademy.ru" method="get">
             <fieldset class="fieldset-price">
               <legend>Стоимость</legend>
+              <div class="range-filter">
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar"></div>
+                  </div>
+                  <div class="toggle toggle-min" tabindex="0"><div class="toggle-price">от 0</div></div>
+                  <div class="toggle toggle-max" tabindex="0"><div class="toggle-price">до 5000</div></div>
+                </div>
+              </div>
+              <input type="hidden" name="price-from" value="0">
+              <input type="hidden" name="price-to" value="5000">
             </fieldset>
             <fieldset class="fieldset-color">
               <legend>Цвет</legend>
               <ul>
                 <li>
                   <input id="color-black" type="checkbox" name="colors" value="black" class="filters-checkbox" checked>
-                  <label for="color-black">Черный</label>
+                  <label for="color-black">Чёрный</label>
                 </li>
                 <li>
                   <input id="color-white" type="checkbox" name="colors" value="white" class="filters-checkbox">
@@ -231,13 +242,13 @@
               <li class="pagination-item-prev">
                 <a href="#" class="pagination-link">Назад</a>
               </li>
-              <li>
+              <li class="pagination-item pagination-item-first-page">
                 <a href="#" class="pagination-link pagination-link-active">1</a>
               </li>
-              <li>
+              <li class="pagination-item">
                 <a href="#" class="pagination-link">2</a>
               </li>
-              <li>
+              <li class="pagination-item">
                 <a href="#" class="pagination-link">3</a>
               </li>
               <li class="pagination-item-next">
