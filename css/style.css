@@ -383,7 +383,7 @@ img {
 }
 
 .popular {
-  margin-bottom: 100px;
+  margin-bottom: -15px;
   position: relative;
   top: -129px;
   right: -2px;
@@ -573,6 +573,16 @@ img {
   margin-bottom: 150px;
 }
 
+.categories h3 {
+  margin: 0;
+  font-family: var(--font-gilroy);
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.05em;
+  padding-left: 2px;
+}
+
 .categories ul {
   list-style: none;
   margin: 0;
@@ -591,6 +601,7 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 37px;
 }
 
 .categories-link {
