@@ -488,7 +488,7 @@ img {
 }
 
 .slider th {
-  font-family: Gilroy, Arial, sans-serif;
+  font-family: var(--font-gilroy);
   font-weight: 300;
   font-size: 36px;
   line-height: 42px;
@@ -507,7 +507,7 @@ img {
 }
 
 .slider td {
-  font-family: Gilroy, Arial, sans-serif;
+  font-family: var(--font-gilroy);
   font-weight: 300;
   font-size: 13px;
   line-height: 15px;
@@ -755,6 +755,22 @@ img {
   padding: 0;
   display: flex;
   justify-content: space-between;
+}
+
+.brand-link {
+  display: block;
+  position: relative;
+}
+
+.brand-hover-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.brand-link:hover .brand-hover-image {
+  opacity: 1;
 }
 
 .info-title {
