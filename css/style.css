@@ -570,7 +570,7 @@ img {
 }
 
 .categories {
-  margin-bottom: 150px;
+  margin-bottom: 184px;
 }
 
 .categories h3 {
@@ -624,7 +624,9 @@ img {
 }
 
 .services {
-  margin-bottom: 100px;
+  margin-bottom: 90px;
+  padding-bottom: 68px;
+  background-color: var(--color-extra-light-grey);
 }
 
 .services-container {
@@ -637,9 +639,91 @@ img {
   padding: 0;
 }
 
-.services .active-service {
-  display: block;
+.services .services-type {
+  margin-top: -100px;
+  padding-bottom: 78px;
+  padding-top: 80px;
+  border-right: 7px solid var(--color-black);
+}
+
+.service-item {
+  margin-bottom: 21px;
+  width: 278px;
+}
+
+.service-item:last-child {
+  margin-bottom: 0;
+}
+
+.button-service {
+  display: inline-block;
+  min-width: 160px;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  padding-left: 2px;
+  z-index: 2;
+}
+
+.button-service:before {
+  top: 16px;
+}
+
+.service-item-active {
   background-color: var(--color-black);
+}
+
+.service-item-active .button-service:before {
+  display: none;
+  width: 100%;
+}
+
+.services .services-description {
+  padding-left: 116px;
+  margin-top: -29px;
+  width: 100%;
+}
+
+.services-description-item {
+  display: none;
+  position: relative;
+}
+
+.services-description-item:after {
+  content: "";
+  position: absolute;
+  display: block;
+  background-repeat: no-repeat;
+}
+
+.services-description-item-delivery:after {
+  width: 136px;
+  height: 164px;
+  background-image: url("../img/delivery.svg");
+  top: 0;
+  right: 0;
+}
+
+.services-description-item-warranty:after {
+  width: 171px;
+  height: 195px;
+  background-image: url("../img/warranty.svg");
+  top: -19px;
+  right: -17px;
+}
+
+.services-description-item-credit:after {
+  width: 156px;
+  height: 188px;
+  background-image: url("../img/credit.svg");
+  top: -23px;
+  right: 7px;
+}
+
+.services-description-item-active {
+  display: block;
+}
+
+.service-item-active .button-service {
   color: var(--color-yellow);
 }
 
@@ -651,14 +735,12 @@ img {
   letter-spacing: 0.2em;
   color: var(--color-black);
   margin: 0;
+  margin-bottom: 40px;
 }
 
 .services p {
-  font-family: "Open Sans", Arial, sans-serif;
-  font-style: normal;
-  font-weight: 300;
   font-size: 15px;
-  line-height: 28px;
+  line-height: 30px;
   letter-spacing: 0.1em;
   color: var(--color-black);
 }
