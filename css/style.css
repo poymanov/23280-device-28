@@ -808,7 +808,7 @@ img {
 
 .about {
   width: 500px;
-  padding-left: 4px;
+  padding-left: 1px;
 }
 
 .info-title-about {
@@ -817,7 +817,7 @@ img {
 }
 
 .contacts {
-  width: 557px;
+  width: 559px
 }
 
 .info-title-contacts {
