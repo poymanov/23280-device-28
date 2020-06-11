@@ -728,7 +728,7 @@ img {
 }
 
 .services h3 {
-  font-family: Gilroy, Arial, sans-serif;
+  font-family: var(--font-gilroy);
   font-weight: 800;
   font-size: 47px;
   line-height: 58px;
@@ -1755,7 +1755,7 @@ img {
   background-color: var(--feedback-input-color);
   border: 0;
   padding: 18px 20px 17px;
-  font-family: Gilroy, Arial, sans-serif;
+  font-family: var(--font-gilroy);
   font-weight: 300;
   font-size: 14px;
   line-height: 16px;
@@ -1772,7 +1772,7 @@ img {
 }
 
 .feedback-field::placeholder {
-  font-family: Gilroy, Arial, sans-serif;
+  font-family: var(--font-gilroy);
   font-weight: 300;
   font-size: 14px;
   line-height: 16px;
