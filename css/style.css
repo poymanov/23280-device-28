@@ -757,20 +757,12 @@ img {
   justify-content: space-between;
 }
 
-.brand-link {
-  display: block;
-  position: relative;
+.brand-image {
+  filter: opacity(0.2) grayscale(1);
 }
 
-.brand-hover-image {
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0;
-}
-
-.brand-link:hover .brand-hover-image {
-  opacity: 1;
+.brand-link:hover .brand-image {
+  filter: none;
 }
 
 .info-title {
