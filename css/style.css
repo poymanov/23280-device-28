@@ -1296,6 +1296,14 @@ img {
   margin-bottom: 8px;
 }
 
+.product-item:first-child .product-price {
+  right: 8px;
+}
+
+.product-item:nth-child(2) .product-price {
+  right: -2px;
+}
+
 .product-image-wrapper:hover .product-controls {
   display: flex;
 }
@@ -1349,6 +1357,8 @@ img {
   letter-spacing: 0.05em;
   margin: 0;
   display: block;
+  position: relative;
+  right: -4px;
 }
 
 .product-image-wrapper {
