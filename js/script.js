@@ -8,8 +8,8 @@ var feedbackForm = document.querySelector('.feedback-form');
 var modalShowClassName = 'modal-show';
 var modalErrorClassName = 'modal-error';
 var isStorageSupport = true;
-var nameStorage = "";
-var emailStorage = "";
+var nameStorage = '';
+var emailStorage = '';
 var escKeyCode = 27;
 
 try {
