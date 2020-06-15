@@ -1737,9 +1737,9 @@ img {
   position: fixed;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
   width: 760px;
   background-color: var(--color-white);
+  transform: translate(-50%, -50%);
   padding-right: 100px;
   padding-left: 99px;
   padding-top: 93px;
@@ -1830,4 +1830,53 @@ img {
 .feedback .button-close-modal {
   top: 20px;
   right: 18px;
+}
+
+.modal-show {
+  display: block;
+  animation: bounce 0.6s;
+}
+
+.modal-error {
+  animation: shake 0.6s;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translate(-50%, -200%);
+  }
+
+  70% {
+    transform: translate(-50%, -35%);
+  }
+
+  90% {
+    transform: translate(-50%, -45%);
+  }
+
+  100% {
+    transform: translate(-50%, -50%);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translate(-50%, -50%);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translate(-48%, -50%);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translate(-50%, -50%);
+  }
 }
