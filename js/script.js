@@ -1,5 +1,7 @@
 var feedbackModal = document.querySelector('.feedback');
 var feedbackBtn = document.querySelector('.button-contacts');
+var mapModal = document.querySelector('.map');
+var mapBtn = document.querySelector('.map-link');
 var closeModalBtns = document.querySelectorAll('.button-close-modal');
 var feedbackNameInput = document.querySelector('[name="name"]');
 var feedbackEmailInput = document.querySelector('[name="email"]');
@@ -37,6 +39,12 @@ feedbackBtn.addEventListener('click', function (evt) {
   } else {
     feedbackNameInput.focus();
   }
+});
+
+/** Открытие формы с картой */
+mapBtn.addEventListener('click', function (evt) {
+  evt.preventDefault();
+  mapModal.classList.add(modalShowClassName);
 });
 
 /** Отправка формы обратной связи */
