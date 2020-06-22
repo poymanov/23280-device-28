@@ -1805,6 +1805,11 @@ img {
   outline: 2px solid var(--color-yellow);
 }
 
+.feedback-field:invalid {
+  background-color: var(--color-pink);
+  outline: 0;
+}
+
 .feedback .feedback-text {
   margin-bottom: 43px;
 }
