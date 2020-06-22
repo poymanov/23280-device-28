@@ -7,8 +7,11 @@ var feedbackNameInput = document.querySelector('[name="name"]');
 var feedbackEmailInput = document.querySelector('[name="email"]');
 var feedbackTextarea = document.querySelector('[name="text"]');
 var feedbackForm = document.querySelector('.feedback-form');
+var sliderControls = document.querySelectorAll('.slider-control');
 var modalShowClassName = 'modal-show';
 var modalErrorClassName = 'modal-error';
+var activeControlClassName = 'slider-control-active';
+var activeSlideClassName = 'slide-active';
 var isStorageSupport = true;
 var nameStorage = '';
 var emailStorage = '';
@@ -76,6 +79,21 @@ window.addEventListener('keydown', function (evt) {
       closeOpenedModal(openedModal);
     }
   }
+});
+
+/** Переключение слайдов */
+sliderControls.forEach(function (item) {
+  item.addEventListener('click', function (evt) {
+    evt.preventDefault();
+
+    var currentControlId = item.dataset.slideControlId;
+    document.querySelector('.slider-control.' + activeControlClassName).classList.remove(activeControlClassName);
+    item.classList.add(activeControlClassName);
+
+    document.querySelector('.' + activeSlideClassName).classList.remove(activeSlideClassName);
+    document.querySelector('[data-slide-id="' + currentControlId + '"]').classList.add(activeSlideClassName);
+
+  });
 });
 
 /** Логика закрытия модального окна */
