@@ -1,4 +1,11 @@
 @font-face {
+  font-family: "Open Sans";
+  font-weight: 300;
+  src: url("../fonts/opensanslight.woff2") format("woff2"),
+  url("../fonts/opensanslight.woff") format("woff");
+}
+
+@font-face {
   font-family: Gilroy;
   font-weight: 300;
   src: url("../fonts/gilroylight.woff2") format("woff2"),
