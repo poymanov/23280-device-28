@@ -8,10 +8,13 @@ var feedbackEmailInput = document.querySelector('[name="email"]');
 var feedbackTextarea = document.querySelector('[name="text"]');
 var feedbackForm = document.querySelector('.feedback-form');
 var sliderControls = document.querySelectorAll('.slider-control');
+var serviceItem = document.querySelectorAll('.service-item');
 var modalShowClassName = 'modal-show';
 var modalErrorClassName = 'modal-error';
 var activeControlClassName = 'slider-control-active';
 var activeSlideClassName = 'slide-active';
+var activeServiceItemClassName = 'service-item-active';
+var activeServiceDescriptionClassName = 'services-description-item-active';
 var isStorageSupport = true;
 var nameStorage = '';
 var emailStorage = '';
@@ -92,7 +95,20 @@ sliderControls.forEach(function (item) {
 
     document.querySelector('.' + activeSlideClassName).classList.remove(activeSlideClassName);
     document.querySelector('[data-slide-id="' + currentControlId + '"]').classList.add(activeSlideClassName);
+  });
+});
 
+/** Переключение описания сервисов */
+serviceItem.forEach(function (item) {
+  item.addEventListener('click', function (evt) {
+    evt.preventDefault();
+
+    var currentServiceItemId = item.dataset.serviceItemId;
+    document.querySelector('.' + activeServiceItemClassName).classList.remove(activeServiceItemClassName);
+    item.classList.add(activeServiceItemClassName);
+
+    document.querySelector('.' + activeServiceDescriptionClassName).classList.remove(activeServiceDescriptionClassName);
+    document.querySelector('[data-service-description-id="' + currentServiceItemId + '"]' ).classList.add(activeServiceDescriptionClassName);
   });
 });
 
